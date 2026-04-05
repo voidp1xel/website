@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket Goel | IIIT-H CSE</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="mouse-glow"></div>
+
+    <header class="site-header">
+        <nav class="primary-nav" aria-label="Main Navigation">
+            <div class="logo">
+                <a href="#home">Aniket Goel</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item active">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+            <div class="nav-settings">
+                <button id="settings-btn" aria-label="Settings">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06-.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                </button>
+                <div id="settings-dropdown">
+                    <div class="settings-row">
+                        <label>Light Mode</label>
+                        <div class="theme-icons">
+                            <span>🌙</span>
+                            <label class="theme-switch">
+                                <input type="checkbox" id="theme-toggle" aria-label="Toggle Light Mode">
+                                <span class="theme-switch-track"></span>
+                            </label>
+                            <span>☀️</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+
+        <section id="home" class="page-section hero-section">
+            <div class="hero-split" id="hero-content">
+                <div class="hero-left">
+                    <h1 class="hero-title animate-entrance">Hello, I'm<br><em>Aniket Goel.</em></h1>
+                    <p class="hero-subtitle animate-entrance">A 1st year CS undergrad at IIIT Hyderabad</p>
+                    <div class="hero-actions animate-entrance">
+                        <a href="#projects" class="btn btn-primary">View My Projects</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                </div>
+
+                <div class="hero-right animate-entrance">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="file-name">Aniket Goel</span>
+                        </div>
+                        <div class="code-window-body">
+                            <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">developer</span> <span class="operator">=</span> <span class="punctuation">{</span>
+    <span class="property">name</span><span class="punctuation">:</span> <span class="string">"Aniket Goel"</span><span class="punctuation">,</span>
+    <span class="property">rollNumber</span><span class="punctuation">:</span> <span class="number">2025101102</span><span class="punctuation">,</span>
+    <span class="property">role</span><span class="punctuation">:</span> <span class="string">"CS Undergraduate"</span><span class="punctuation">,</span>
+    <span class="property">location</span><span class="punctuation">:</span> <span class="string">"IIIT Hyderabad"</span><span class="punctuation">,</span>
+    <span class="property">languages</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+        <span class="string">"C"</span><span class="punctuation">,</span> <span class="string">"C++"</span><span class="punctuation">,</span> <span class="string">"Python"</span><span class="punctuation">,</span>
+        <span class="string">"HTML"</span><span class="punctuation">,</span> <span class="string">"CSS"</span><span class="punctuation">,</span> <span class="string">"JS"</span>
+    <span class="punctuation">}</span>
+<span class="punctuation">};</span></code></pre>
+                            
+                            <div class="profile-photo-container">
+                                <img src="your-photo.jpg" alt="Aniket Goel" class="profile-photo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page-section">
+            <div class="about-intro scroll-animate">
+                <h2>Building things<br>that <em>matter.</em></h2>
+                
+                <div class="about-grid">
+                    <article class="personal-statement">
+                        <h3 style="margin-bottom: var(--space-md);">Background</h3>
+                        <p>I am a B.Tech Computer Science student at IIIT Hyderabad, driven by the intersection of high-performance systems and algorithmic efficiency. I build highly scalable, technically sound software from the ground up, preferring to understand underlying OS mechanics and low-level memory management rather than relying on heavy abstractions.</p>
+                        <p>Beyond traditional computer science, my greatest passion lies in aviation. I am actively studying flight mechanics and pilot procedures, bridging the gap between my two worlds by developing high-fidelity air traffic control simulators and pilot cognitive-load testing software. Whether I'm optimizing concurrent sockets or studying the Pilot's Handbook, I am constantly seeking out rigorous intellectual challenges.</p>
+                    </article>
+                    
+                    <div class="about-stats scroll-animate" style="transition-delay: 0.2s;">
+                        <div class="stat-item">
+                            <div class="stat-num">99.88%<sub>ile</sub></div>
+                            <div class="stat-label">JEE Mains '25</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">AIR 1937</div>
+                            <div class="stat-label">All India Rank</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">304</div>
+                            <div class="stat-label">BITSAT Score</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-highlights scroll-animate" style="margin-top: var(--space-xxl);">
+                <h3 style="margin-bottom: var(--space-lg); font-size: var(--fs-lg);">Current <em>Focus</em></h3>
+                <div class="highlights-grid">
+                    <article class="highlight-card">
+                        <h3>Systems Programming</h3>
+                        <p>Diving deep into low-level mechanics using C and C++ to understand memory management, hardware interaction, and highly optimized execution environments.</p>
+                    </article>
+                    <article class="highlight-card">
+                        <h3>Algorithmic Efficiency</h3>
+                        <p>Rigorous study of Data Structures and Algorithms to solve complex, time-sensitive computational problems natively, without relying on external abstractions.</p>
+                    </article>
+                    <article class="highlight-card">
+                        <h3>Aviation & Simulation</h3>
+                        <p>Exploring the intersection of computer science and aerospace by building custom flight simulators, radar backends, and cognitive pressure-testing applications.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="experience-timeline scroll-animate" style="margin-top: var(--space-xxl);">
+                <h2><em>Milestones</em></h2>
+                <p class="instruction-text" style="margin-bottom: var(--space-lg);">Scroll to move the timeline forward. Click to expand.</p>
+                
+                <ul class="timeline-container" id="timeline-list">
+                    <div id="timeline-pointer" class="timeline-pointer" aria-hidden="true"></div>
+
+                    <li class="timeline-item">
+                        <button class="timeline-trigger" aria-expanded="false" aria-controls="content-5">
+                            <span class="timeline-date">2025</span>
+                            <span class="timeline-title">BITSAT — 304 Marks</span>
+                            <span class="timeline-icon">+</span>
+                        </button>
+                        <div class="timeline-content" id="content-5" aria-hidden="true">
+                            <div class="timeline-content-inner">
+                                <p>Scored a highly competitive 304 marks in the Birla Institute of Technology and Science Admission Test (BITSAT) 2025, tested across Physics, Chemistry, Mathematics, and English Proficiency.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button class="timeline-trigger" aria-expanded="false" aria-controls="content-4">
+                            <span class="timeline-date">2025</span>
+                            <span class="timeline-title">JEE Advanced — AIR 3566</span>
+                            <span class="timeline-icon">+</span>
+                        </button>
+                        <div class="timeline-content" id="content-4" aria-hidden="true">
+                            <div class="timeline-content-inner">
+                                <p>Achieved an All India Rank of 3566 in the highly competitive JEE Advanced 2025, demonstrating strong analytical and problem-solving skills.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button class="timeline-trigger" aria-expanded="false" aria-controls="content-3">
+                            <span class="timeline-date">2025</span>
+                            <span class="timeline-title">JEE Mains — AIR 1937</span>
+                            <span class="timeline-icon">+</span>
+                        </button>
+                        <div class="timeline-content" id="content-3" aria-hidden="true">
+                            <div class="timeline-content-inner">
+                                <p>Secured All India Rank 1937 in JEE Mains 2025, placing in the 99.88th percentile nationally out of over a million candidates.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button class="timeline-trigger" aria-expanded="false" aria-controls="content-2">
+                            <span class="timeline-date">2025</span>
+                            <span class="timeline-title">CBSE Class XII Boards</span>
+                            <span class="timeline-icon">+</span>
+                        </button>
+                        <div class="timeline-content" id="content-2" aria-hidden="true">
+                            <div class="timeline-content-inner">
+                                <p>Scored 93.4% in the CBSE Class XII examinations. Core subjects: Physics, Chemistry, Mathematics, Physical Education, and English.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button class="timeline-trigger" aria-expanded="false" aria-controls="content-1">
+                            <span class="timeline-date">2023</span>
+                            <span class="timeline-title">CBSE Class X Boards</span>
+                            <span class="timeline-icon">+</span>
+                        </button>
+                        <div class="timeline-content" id="content-1" aria-hidden="true">
+                            <div class="timeline-content-inner">
+                                <p>Scored 94.6% in the CBSE Class X examinations. Core subjects: Mathematics, Science, Social Science, Hindi, and English.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="page-section">
+            <div class="projects-header scroll-animate">
+                <h2>My <em>Projects</em></h2>
+                <p>A collection of software engineering projects. Click "Behind the Code" to flip the cards.</p>
+            </div>
+
+            <section class="project-filters-container scroll-animate">
+                <div class="filter-controls" id="filter-controls">
+                    <button class="filter-btn tag" data-tag="c">C</button>
+                    <button class="filter-btn tag" data-tag="cpp">C++</button>
+                    <button class="filter-btn tag" data-tag="cli">CLI</button>
+                    <button class="filter-btn tag" data-tag="networking">Networking</button>
+                    <button class="filter-btn tag" data-tag="algorithms">Algorithms</button>
+                    <button class="filter-btn tag" data-tag="simulation">Simulation</button>
+                    <button class="filter-btn tag" data-tag="web">Web Dev</button>
+                    <button class="filter-btn tag" data-tag="js">Vanilla JS</button>
+                    <button class="filter-btn tag clear-btn" id="clear-filters">✕ Clear Filters</button>
+                </div>
+            </section>
+
+            <section class="projects-gallery scroll-animate" id="projects-gallery">
+                
+                <article class="project-card" data-tags="c,cli">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3 class="card-title">C-Unplugged</h3>
+                            <p class="card-desc">A lightweight, CLI-based music player built in C that brings a Spotify-like experience to the terminal.</p>
+                            <div class="project-tags"><span class="tag">C</span><span class="tag">CLI</span><span class="tag">Native</span></div>
+                            <div class="flip-btn-container">
+                                <button class="btn btn-outline flip-trigger">Behind the Code ➔</button>
+                                <a href="https://github.com/voidp1xel/C-unplugged" class="btn btn-primary" target="_blank">GitHub Repo</a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Overview:</h4><p class="card-desc">Manages native data structures for playlists and audio tracks entirely within a command-line interface.</p>
+                            <h4>Architecture:</h4><p class="card-desc">Implements custom memory allocation and linked lists in C for robust file and state handling.</p>
+                            <h4>Key Features:</h4><p class="card-desc">Features process forking for responsive UI rendering alongside purely native, zero-bloat execution.</p>
+                            <div class="flip-btn-container card-back-actions">
+                                <button class="btn btn-outline flip-trigger">➔ Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-tags="c,algorithms,cli">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3 class="card-title">Twixt-C</h3>
+                            <p class="card-desc">A terminal-based strategy game built in C featuring complex connection logic and competitive gameplay.</p>
+                            <div class="project-tags"><span class="tag">Algorithms</span><span class="tag">C</span><span class="tag">CLI</span></div>
+                            <div class="flip-btn-container">
+                                <button class="btn btn-outline flip-trigger">Behind the Code ➔</button>
+                                <a href="https://github.com/voidp1xel/Twixt-C" class="btn btn-primary" target="_blank">GitHub Repo</a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Overview:</h4><p class="card-desc">Translates complex topological board game rules into programmatic logic with an ANSI-color interface.</p>
+                            <h4>Architecture:</h4><p class="card-desc">Utilizes graph-theory and pathfinding algorithms on a constrained grid to evaluate win conditions.</p>
+                            <h4>Key Features:</h4><p class="card-desc">Includes a heuristic-based opponent AI and highly optimized native C binary execution.</p>
+                            <div class="flip-btn-container card-back-actions">
+                                <button class="btn btn-outline flip-trigger">➔ Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-tags="c,networking">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3 class="card-title">Collaborative Editor</h3>
+                            <p class="card-desc">A real-time text editor built in C via a client-server architecture supporting live synchronisation.</p>
+                            <div class="project-tags"><span class="tag">TCP/IP</span><span class="tag">Sockets</span><span class="tag">Networking</span></div>
+                            <div class="flip-btn-container">
+                                <button class="btn btn-outline flip-trigger">Behind the Code ➔</button>
+                                <a href="https://github.com/voidp1xel/collaborative-editor" class="btn btn-primary" target="_blank">GitHub Repo</a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Overview:</h4><p class="card-desc">Allows multiple instances to connect via TCP and edit a shared string buffer concurrently.</p>
+                            <h4>Architecture:</h4><p class="card-desc">Built on a custom C client-server architecture demonstrating raw socket programming and stream management.</p>
+                            <h4>Key Features:</h4><p class="card-desc">Achieves immense synchronization speed over the network using manual concurrent memory management.</p>
+                            <div class="flip-btn-container card-back-actions">
+                                <button class="btn btn-outline flip-trigger">➔ Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-tags="cpp,algorithms,simulation">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3 class="card-title">Eulerian Fluid Sim</h3>
+                            <p class="card-desc">A real-time 2D fluid dynamics simulator solving the Navier-Stokes equations entirely from scratch.</p>
+                            <div class="project-tags"><span class="tag">C++20</span><span class="tag">Algorithms</span><span class="tag">Physics</span></div>
+                            <div class="flip-btn-container">
+                                <button class="btn btn-outline flip-trigger">Behind the Code ➔</button>
+                                <a href="https://github.com/voidp1xel/fluid-simulator" class="btn btn-primary" target="_blank">GitHub Repo</a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Overview:</h4><p class="card-desc">Simulates incompressible flow using Jos Stam's Stable Fluids algorithm with interactive dye and velocity injection.</p>
+                            <h4>Architecture:</h4><p class="card-desc">Written natively in C++20 using SFML for hardware-accelerated rendering and a custom Gauss-Seidel solver.</p>
+                            <h4>Key Features:</h4><p class="card-desc">Implements implicit backward-Euler diffusion and pressure projection for unconditionally stable vortices.</p>
+                            <div class="flip-btn-container card-back-actions">
+                                <button class="btn btn-outline flip-trigger">➔ Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-tags="cpp,networking,js,simulation">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3 class="card-title">ATC Sector Simulator</h3>
+                            <p class="card-desc">A live Air Traffic Control radar simulator with a custom C++ physics backend and WebSockets.</p>
+                            <div class="project-tags"><span class="tag">C++</span><span class="tag">WebSockets</span><span class="tag">Canvas</span></div>
+                            <div class="flip-btn-container">
+                                <button class="btn btn-outline flip-trigger">Behind the Code ➔</button>
+                                <a href="https://github.com/voidp1xel/atc-simulator" class="btn btn-primary" target="_blank">GitHub Repo</a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Overview:</h4><p class="card-desc">Renders a live ATC radar display sweeping at 6 RPM while simulating aircraft kinematics at 20 Hz.</p>
+                            <h4>Architecture:</h4><p class="card-desc">Uses a custom C++ HTTP/WebSocket server and Haversine formula for spherical-earth geodesic math.</p>
+                            <h4>Key Features:</h4><p class="card-desc">Features quadtree-based collision detection for loss-of-separation alerts and accepts live vectoring commands.</p>
+                            <div class="flip-btn-container card-back-actions">
+                                <button class="btn btn-outline flip-trigger">➔ Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-tags="web,js,simulation">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3 class="card-title">FAST-ADAPT</h3>
+                            <p class="card-desc">A high-fidelity cognitive load simulation testing multi-tasking and decision-making under pressure.</p>
+                            <div class="project-tags"><span class="tag">Vanilla JS</span><span class="tag">Simulation</span><span class="tag">Canvas</span></div>
+                            <div class="flip-btn-container">
+                                <button class="btn btn-outline flip-trigger">Behind the Code ➔</button>
+                                <a href="https://github.com/voidp1xel/FAST-ADAPT" class="btn btn-primary" target="_blank">GitHub Repo</a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Overview:</h4><p class="card-desc">Simulates aviation entrance assessments with strict constraints on steering, alert management, and memory tracking.</p>
+                            <h4>Architecture:</h4><p class="card-desc">Built purely in Vanilla JavaScript using HTML5 Canvas for real-time physics and performance charting.</p>
+                            <h4>Key Features:</h4><p class="card-desc">Includes a chaos engine for random overlapping events, realistic aircraft instability, and AI-driven reporting.</p>
+                            <div class="flip-btn-container card-back-actions">
+                                <button class="btn btn-outline flip-trigger">➔ Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-tags="web,js">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3 class="card-title">Personal Portfolio</h3>
+                            <p class="card-desc">A cinematic, responsive personal website built natively to showcase my coding journey and academic milestones.</p>
+                            <div class="project-tags"><span class="tag">Web Dev</span><span class="tag">Vanilla JS</span><span class="tag">UI/UX</span></div>
+                            <div class="flip-btn-container">
+                                <button class="btn btn-outline flip-trigger">Behind the Code ➔</button>
+                                <a href="https://github.com/voidp1xel/website" class="btn btn-primary" target="_blank">GitHub Repo</a>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Overview:</h4><p class="card-desc">Acts as a dynamic interactive resume with filterable project galleries and scroll-triggered event timelines.</p>
+                            <h4>Architecture:</h4><p class="card-desc">Built entirely natively using HTML, CSS, and Vanilla JavaScript without any heavy external frameworks.</p>
+                            <h4>Key Features:</h4><p class="card-desc">Employs CSS glassmorphism, responsive Grid layouts, and intersection observers for cinematic animations.</p>
+                            <div class="flip-btn-container card-back-actions">
+                                <button class="btn btn-outline flip-trigger">➔ Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="highlight-card github-banner">
+                    <div class="banner-content">
+                        <h3>Want to see more code?</h3>
+                        <p style="margin-bottom: var(--space-md);">Check out my active repositories, competitive programming solutions, and open-source contributions.</p>
+                        <a href="https://github.com/voidp1xel" class="btn btn-primary" target="_blank">View GitHub Profile</a>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section id="contact" class="page-section">
+            <div class="contact-header scroll-animate" style="text-align: center; margin-bottom: var(--space-lg);">
+                <h2>Let's <em>Connect.</em></h2>
+                <p class="hero-subtitle" style="margin: 0 auto;">My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            </div>
+
+            <div class="signature-card scroll-animate">
+                <div class="sig-header">
+                    <h3>Aniket Goel</h3>
+                    <p>IIITH CSE '29</p>
+                </div>
+                
+                <div class="sig-body">
+                    <a href="mailto:aniketgoel23@gmail.com" class="sig-email">aniketgoel23@gmail.com</a>
+                    <p class="sig-location">📍 IIIT Hyderabad, Telangana</p>
+                </div>
+
+                <div class="sig-socials">
+                    <div class="social-links">
+                        <a href="https://github.com/voidp1xel" target="_blank" aria-label="GitHub" class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aniket-goel-41b96a1b2/" target="_blank" aria-label="LinkedIn" class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="https://www.instagram.com/aniket_goel23/?hl=en" target="_blank" aria-label="Instagram" class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://leetcode.com/u/void_pixel/" target="_blank" aria-label="LeetCode" class="social-icon leetcode-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.939 5.939 0 0 0 1.271 1.543l5.063 4.505c.284.253.688.433 1.144.433.356 0 .715-.102 1.046-.299.416-.25.74-.683.927-1.18.232-.618.155-1.34-.149-1.91l-4.57-4.143a.584.584 0 0 1-.149-.705.59.59 0 0 1 .536-.334h8.311c.71 0 1.4-.265 1.932-.738.544-.486.852-1.144.852-1.846 0-.693-.302-1.344-.836-1.821-.52-.464-1.205-.722-1.892-.722H9.006a.59.59 0 0 1-.536-.334.584.584 0 0 1 .149-.705l5.528-5.914c.264-.282.4-.66.4-1.053 0-.39-.136-.768-.396-1.047a1.38 1.38 0 0 0-.968-.435z"/></svg>
+                        </a>
+                        <a href="https://codeforces.com/profile/voidpixel" target="_blank" aria-label="Codeforces" class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5h-3C.672 21 0 20.328 0 19.5V9c0-.828.672-1.5 1.5-1.5h3zm9-4.5c.828 0 1.5.672 1.5 1.5v15c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-15c0-.828.672-1.5 1.5-1.5h3zm9 7.5c.828 0 1.5.672 1.5 1.5v7.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5V12c0-.828.672-1.5 1.5-1.5h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Aniket Goel | Built natively</p>
+    </footer>
+</body>
+</html>
